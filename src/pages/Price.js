@@ -3,7 +3,7 @@ import React from "react";
 const Price = (props) => {
   const apiKey = "95EA365A-EC88-4549-A019-12F939DBF578"; // Our api key from coinapi.io
   const symbol = props.match.params.symbol; // Grabbing the Currency symbol from the URL Param
-  const url = `http://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${apiKey}`; // Using the other two variables to create our URL
+  const url = `https://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${apiKey}`; // Using the other two variables to create our URL
 
   const [coin, setCoin] = React.useState(null);
 
